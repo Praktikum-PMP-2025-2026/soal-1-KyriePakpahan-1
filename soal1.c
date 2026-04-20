@@ -4,9 +4,8 @@
  *   Nama (NIM)          : Kyrie Eleison Jacob Pakpahan (13224006)
  *   Nama File           : soal1.c
  *   Deskripsi           : Fungsi untuk mengembalikan nilai yang hilang pada array, kemudian mengembalikan nilai jumlah maksimum dari elemen array di dalamnya
- * 
- *   
- */
+**/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,12 +13,12 @@ int get_floor_avg(int sum){
     if (sum >0) {
         return sum / 2;
     }else {
-        return (sum - 1) / 2; // untuk memastikan pembulatan ke bawah
+        return (sum - 1) / 2; // untuk memxastikan pembulatan ke bawah
     }
 }
 
 void recovery_array (int arr[], int N){
-    // recovery array
+    // array recovery 
     for (int i = 0; i < N; i++) {
         if (arr[i] == -1) {
             int has_left = 0, left_val = 0;
@@ -65,8 +64,8 @@ void print_recovered_array (int arr[], int N){
 }
 
 void print_max_sum (int arr[], int N){
-    long long max_sum = arr[0];
-    long long current_sum = arr[0];
+    int max_sum = arr[0];
+    int current_sum = arr[0];
     
     for (int i = 1; i < N; i++) {
         if (current_sum < 0) {
