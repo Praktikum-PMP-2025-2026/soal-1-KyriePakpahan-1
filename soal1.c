@@ -79,7 +79,7 @@ void print_max_sum (int arr[], int N){
         }
     }
 
-    printf("MAX_SUM %lld\n", max_sum);
+    printf("MAX_SUM %d\n", max_sum);
 }
 
  int main () {
